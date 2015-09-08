@@ -330,7 +330,7 @@ void mixerInit(void)
     } else
         f.FIXED_WING = 0;
 
-    // load custom servo mixer in case we hac servos defined and the SERVO_Mixer feature is enabled
+    // load custom servo mixer if the mode has servos defined and the SERVO_Mixer feature is enabled
     if (core.useServo & feature(FEATURE_SERVO_MIXER))
         loadCustomServoMixer();
 
